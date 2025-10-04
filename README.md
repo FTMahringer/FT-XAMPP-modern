@@ -62,7 +62,7 @@ FT-XAMPP/
 ├── data/                # Database + redis + phpmyadmin files
 │   ├── mariadb_data/    # mariiadb database files
 │   ├── phpmyadmin/      # phpmyadmin config files (change in docker-compose)
-|   ├── redis_data/      # redis - storage
+│   ├── redis_data/      # redis - storage
 │   └── ...
 ├── htdocs/              # your projects (like XAMPP)
 │   ├── _dashboard/      # internal dashboard (Vue + Symfony)
