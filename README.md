@@ -28,6 +28,16 @@ All projects are placed in the `htdocs` folder – just like classic XAMPP, but 
 
 ---
 
+## ✨  Description
+
+Project has an old version of it, but decided to remake it and use a more modern aproach.
+
+The idea was still the same, create a xampp-like environment in docker with more freedom.
+
+The aproach for the modern version was to be able to create PHP projects and also node projects (vue, ...)
+
+---
+
 ## 📦 Installation
 
 1. **Clone the repository**
