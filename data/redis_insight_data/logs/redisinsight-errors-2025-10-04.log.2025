@@ -1,0 +1,834 @@
+10/4/2025, 5:37:53 PM | ERROR | KeytarEncryptionStrategy | Failed to initialize keytar module | {
+  error: {
+    type: 'Error',
+    message: 'Error loading shared library libsecret-1.so.0: No such file or directory (needed by /usr/src/app/redisinsight/api/node_modules/keytar/build/Release/keytar.node)',
+    stack: undefined,
+    cause: undefined
+  },
+  data: undefined
+}
+10/4/2025, 5:37:54 PM | ERROR | CommandsJsonProvider:redistimeseries | Unable to update redistimeseries commands | {
+  error: {
+    type: 'SyntaxError',
+    message: "Expected ',' or '}' after property value in JSON at position 29964",
+    stack: undefined,
+    cause: undefined
+  },
+  data: undefined
+}
+10/4/2025, 5:37:54 PM | ERROR | CommandsJsonProvider:redistimeseries | Unable to update redistimeseries commands | {
+  error: {
+    type: 'SyntaxError',
+    message: "Expected ',' or '}' after property value in JSON at position 29964",
+    stack: undefined,
+    cause: undefined
+  },
+  data: undefined
+}
+10/4/2025, 5:37:54 PM | ERROR | CommandsJsonProvider:redistimeseries | Unable to update redistimeseries commands | {
+  error: {
+    type: 'SyntaxError',
+    message: "Expected ',' or '}' after property value in JSON at position 29964",
+    stack: undefined,
+    cause: undefined
+  },
+  data: undefined
+}
+10/4/2025, 5:57:38 PM | ERROR | KeytarEncryptionStrategy | Failed to initialize keytar module | {
+  error: {
+    type: 'Error',
+    message: 'Error loading shared library libsecret-1.so.0: No such file or directory (needed by /usr/src/app/redisinsight/api/node_modules/keytar/build/Release/keytar.node)',
+    stack: undefined,
+    cause: undefined
+  },
+  data: undefined
+}
+10/4/2025, 5:57:39 PM | ERROR | CommandsJsonProvider:redistimeseries | Unable to update redistimeseries commands | {
+  error: {
+    type: 'SyntaxError',
+    message: "Expected ',' or '}' after property value in JSON at position 29964",
+    stack: undefined,
+    cause: undefined
+  },
+  data: undefined
+}
+10/4/2025, 5:57:39 PM | ERROR | CommandsJsonProvider:redistimeseries | Unable to update redistimeseries commands | {
+  error: {
+    type: 'SyntaxError',
+    message: "Expected ',' or '}' after property value in JSON at position 29964",
+    stack: undefined,
+    cause: undefined
+  },
+  data: undefined
+}
+10/4/2025, 5:57:39 PM | ERROR | CommandsJsonProvider:redistimeseries | Unable to update redistimeseries commands | {
+  error: {
+    type: 'SyntaxError',
+    message: "Expected ',' or '}' after property value in JSON at position 29964",
+    stack: undefined,
+    cause: undefined
+  },
+  data: undefined
+}
+10/4/2025, 6:10:32 PM | ERROR | KeytarEncryptionStrategy | Failed to initialize keytar module | {
+  error: {
+    type: 'Error',
+    message: 'Error loading shared library libsecret-1.so.0: No such file or directory (needed by /usr/src/app/redisinsight/api/node_modules/keytar/build/Release/keytar.node)',
+    stack: undefined,
+    cause: undefined
+  },
+  data: undefined
+}
+10/4/2025, 6:10:33 PM | ERROR | CommandsJsonProvider:redistimeseries | Unable to update redistimeseries commands | {
+  error: {
+    type: 'SyntaxError',
+    message: "Expected ',' or '}' after property value in JSON at position 29964",
+    stack: undefined,
+    cause: undefined
+  },
+  data: undefined
+}
+10/4/2025, 6:10:33 PM | ERROR | CommandsJsonProvider:redistimeseries | Unable to update redistimeseries commands | {
+  error: {
+    type: 'SyntaxError',
+    message: "Expected ',' or '}' after property value in JSON at position 29964",
+    stack: undefined,
+    cause: undefined
+  },
+  data: undefined
+}
+10/4/2025, 6:10:33 PM | ERROR | CommandsJsonProvider:redistimeseries | Unable to update redistimeseries commands | {
+  error: {
+    type: 'SyntaxError',
+    message: "Expected ',' or '}' after property value in JSON at position 29964",
+    stack: undefined,
+    cause: undefined
+  },
+  data: undefined
+}
+10/4/2025, 6:25:07 PM | ERROR | KeytarEncryptionStrategy | Failed to initialize keytar module | {
+  error: {
+    type: 'Error',
+    message: 'Error loading shared library libsecret-1.so.0: No such file or directory (needed by /usr/src/app/redisinsight/api/node_modules/keytar/build/Release/keytar.node)',
+    stack: undefined,
+    cause: undefined
+  },
+  data: undefined
+}
+10/4/2025, 6:25:08 PM | ERROR | CommandsJsonProvider:redistimeseries | Unable to update redistimeseries commands | {
+  error: {
+    type: 'SyntaxError',
+    message: "Expected ',' or '}' after property value in JSON at position 29964",
+    stack: undefined,
+    cause: undefined
+  },
+  data: undefined
+}
+10/4/2025, 6:25:08 PM | ERROR | CommandsJsonProvider:redistimeseries | Unable to update redistimeseries commands | {
+  error: {
+    type: 'SyntaxError',
+    message: "Expected ',' or '}' after property value in JSON at position 29964",
+    stack: undefined,
+    cause: undefined
+  },
+  data: undefined
+}
+10/4/2025, 6:25:08 PM | ERROR | CommandsJsonProvider:redistimeseries | Unable to update redistimeseries commands | {
+  error: {
+    type: 'SyntaxError',
+    message: "Expected ',' or '}' after property value in JSON at position 29964",
+    stack: undefined,
+    cause: undefined
+  },
+  data: undefined
+}
+10/4/2025, 6:27:56 PM | ERROR | KeytarEncryptionStrategy | Failed to initialize keytar module | {
+  error: {
+    type: 'Error',
+    message: 'Error loading shared library libsecret-1.so.0: No such file or directory (needed by /usr/src/app/redisinsight/api/node_modules/keytar/build/Release/keytar.node)',
+    stack: undefined,
+    cause: undefined
+  },
+  data: undefined
+}
+10/4/2025, 6:27:57 PM | ERROR | CommandsJsonProvider:redistimeseries | Unable to update redistimeseries commands | {
+  error: {
+    type: 'SyntaxError',
+    message: "Expected ',' or '}' after property value in JSON at position 29964",
+    stack: undefined,
+    cause: undefined
+  },
+  data: undefined
+}
+10/4/2025, 6:27:57 PM | ERROR | CommandsJsonProvider:redistimeseries | Unable to update redistimeseries commands | {
+  error: {
+    type: 'SyntaxError',
+    message: "Expected ',' or '}' after property value in JSON at position 29964",
+    stack: undefined,
+    cause: undefined
+  },
+  data: undefined
+}
+10/4/2025, 6:27:57 PM | ERROR | CommandsJsonProvider:redistimeseries | Unable to update redistimeseries commands | {
+  error: {
+    type: 'SyntaxError',
+    message: "Expected ',' or '}' after property value in JSON at position 29964",
+    stack: undefined,
+    cause: undefined
+  },
+  data: undefined
+}
+10/4/2025, 6:29:26 PM | ERROR | IoredisRedisConnectionStrategy | Failed connection to the redis database. | {
+  error: {
+    type: 'Error',
+    message: 'connect ECONNREFUSED 127.0.0.1:6379',
+    stack: undefined,
+    cause: undefined
+  },
+  data: [
+    {
+      sessionMetadata: {
+        data: { data: {} },
+        userId: '1',
+        sessionId: '1',
+        correlationId: 'e19a68c2-bc1f-41c2-86a7-afb13a851aa8'
+      },
+      databaseId: '59babf3c-5b5a-4171-a53d-1041131263a1',
+      context: 'Common'
+    }
+  ]
+}
+10/4/2025, 6:29:26 PM | ERROR | DatabaseService | Failed to add database. | {
+  error: {
+    type: 'RedisConnectionUnavailableException',
+    message: 'Could not connect to 127.0.0.1:6379, please check the connection details.',
+    stack: undefined,
+    cause: {
+      type: 'Error',
+      message: 'connect ECONNREFUSED 127.0.0.1:6379',
+      stack: undefined,
+      cause: undefined
+    }
+  },
+  sessionMetadata: {
+    data: { data: {} },
+    userId: '1',
+    sessionId: '1',
+    correlationId: 'e19a68c2-bc1f-41c2-86a7-afb13a851aa8'
+  },
+  data: undefined
+}
+10/4/2025, 6:29:26 PM | ERROR | IoredisRedisConnectionStrategy | Failed connection to the redis database. | {
+  error: {
+    type: 'Error',
+    message: 'connect ECONNREFUSED 127.0.0.1:6379',
+    stack: undefined,
+    cause: undefined
+  },
+  data: [
+    {
+      sessionMetadata: {
+        data: { data: {} },
+        userId: '1',
+        sessionId: '1',
+        correlationId: 'e19a68c2-bc1f-41c2-86a7-afb13a851aa8'
+      },
+      databaseId: '59babf3c-5b5a-4171-a53d-1041131263a1',
+      context: 'Common'
+    }
+  ]
+}
+10/4/2025, 6:29:27 PM | ERROR | IoredisRedisConnectionStrategy | Failed connection to the redis database. | {
+  error: {
+    type: 'Error',
+    message: 'connect ECONNREFUSED 127.0.0.1:6379',
+    stack: undefined,
+    cause: undefined
+  },
+  data: [
+    {
+      sessionMetadata: {
+        data: { data: {} },
+        userId: '1',
+        sessionId: '1',
+        correlationId: 'e19a68c2-bc1f-41c2-86a7-afb13a851aa8'
+      },
+      databaseId: '59babf3c-5b5a-4171-a53d-1041131263a1',
+      context: 'Common'
+    }
+  ]
+}
+10/4/2025, 6:29:37 PM | ERROR | IoredisRedisConnectionStrategy | Failed connection to the redis database. | {
+  error: {
+    type: 'ReplyError',
+    message: 'WRONGPASS invalid username-password pair or user is disabled.',
+    stack: undefined,
+    cause: undefined
+  },
+  data: [
+    {
+      sessionMetadata: {
+        data: { data: {} },
+        userId: '1',
+        sessionId: '1',
+        correlationId: '54a37c50-e3e3-42cc-995e-7fe1f1ba0b08'
+      },
+      databaseId: '92106dbd-20cb-4d65-82ee-ec0feecb461f',
+      context: 'Common'
+    }
+  ]
+}
+10/4/2025, 6:29:37 PM | ERROR | DatabaseService | Connection test failed | {
+  error: {
+    type: 'RedisConnectionUnauthorizedException',
+    message: 'Failed to authenticate, please check the username or password.',
+    stack: undefined,
+    cause: {
+      type: 'ReplyError',
+      message: 'WRONGPASS invalid username-password pair or user is disabled.',
+      stack: undefined,
+      cause: undefined
+    }
+  },
+  sessionMetadata: {
+    data: { data: {} },
+    userId: '1',
+    sessionId: '1',
+    correlationId: '54a37c50-e3e3-42cc-995e-7fe1f1ba0b08'
+  },
+  data: undefined
+}
+10/4/2025, 6:29:38 PM | ERROR | IoredisRedisConnectionStrategy | Failed connection to the redis database. | {
+  error: {
+    type: 'ReplyError',
+    message: 'WRONGPASS invalid username-password pair or user is disabled.',
+    stack: undefined,
+    cause: undefined
+  },
+  data: [
+    {
+      sessionMetadata: {
+        data: { data: {} },
+        userId: '1',
+        sessionId: '1',
+        correlationId: '54a37c50-e3e3-42cc-995e-7fe1f1ba0b08'
+      },
+      databaseId: '92106dbd-20cb-4d65-82ee-ec0feecb461f',
+      context: 'Common'
+    }
+  ]
+}
+10/4/2025, 6:29:39 PM | ERROR | IoredisRedisConnectionStrategy | Failed connection to the redis database. | {
+  error: {
+    type: 'ReplyError',
+    message: 'WRONGPASS invalid username-password pair or user is disabled.',
+    stack: undefined,
+    cause: undefined
+  },
+  data: [
+    {
+      sessionMetadata: {
+        data: { data: {} },
+        userId: '1',
+        sessionId: '1',
+        correlationId: '54a37c50-e3e3-42cc-995e-7fe1f1ba0b08'
+      },
+      databaseId: '92106dbd-20cb-4d65-82ee-ec0feecb461f',
+      context: 'Common'
+    }
+  ]
+}
+10/4/2025, 6:29:47 PM | ERROR | IoredisRedisConnectionStrategy | Failed connection to the redis database. | {
+  error: {
+    type: 'ReplyError',
+    message: 'WRONGPASS invalid username-password pair or user is disabled.',
+    stack: undefined,
+    cause: undefined
+  },
+  data: [
+    {
+      sessionMetadata: {
+        data: { data: {} },
+        userId: '1',
+        sessionId: '1',
+        correlationId: 'ef2e473d-4e67-4f02-b88b-c748d928b845'
+      },
+      databaseId: '75d81ca1-1ae1-4c3a-8cba-f71198c17306',
+      context: 'Common'
+    }
+  ]
+}
+10/4/2025, 6:29:47 PM | ERROR | DatabaseService | Connection test failed | {
+  error: {
+    type: 'RedisConnectionUnauthorizedException',
+    message: 'Failed to authenticate, please check the username or password.',
+    stack: undefined,
+    cause: {
+      type: 'ReplyError',
+      message: 'WRONGPASS invalid username-password pair or user is disabled.',
+      stack: undefined,
+      cause: undefined
+    }
+  },
+  sessionMetadata: {
+    data: { data: {} },
+    userId: '1',
+    sessionId: '1',
+    correlationId: 'ef2e473d-4e67-4f02-b88b-c748d928b845'
+  },
+  data: undefined
+}
+10/4/2025, 6:29:48 PM | ERROR | IoredisRedisConnectionStrategy | Failed connection to the redis database. | {
+  error: {
+    type: 'ReplyError',
+    message: 'WRONGPASS invalid username-password pair or user is disabled.',
+    stack: undefined,
+    cause: undefined
+  },
+  data: [
+    {
+      sessionMetadata: {
+        data: { data: {} },
+        userId: '1',
+        sessionId: '1',
+        correlationId: 'ef2e473d-4e67-4f02-b88b-c748d928b845'
+      },
+      databaseId: '75d81ca1-1ae1-4c3a-8cba-f71198c17306',
+      context: 'Common'
+    }
+  ]
+}
+10/4/2025, 6:29:49 PM | ERROR | IoredisRedisConnectionStrategy | Failed connection to the redis database. | {
+  error: {
+    type: 'ReplyError',
+    message: 'WRONGPASS invalid username-password pair or user is disabled.',
+    stack: undefined,
+    cause: undefined
+  },
+  data: [
+    {
+      sessionMetadata: {
+        data: { data: {} },
+        userId: '1',
+        sessionId: '1',
+        correlationId: 'ef2e473d-4e67-4f02-b88b-c748d928b845'
+      },
+      databaseId: '75d81ca1-1ae1-4c3a-8cba-f71198c17306',
+      context: 'Common'
+    }
+  ]
+}
+10/4/2025, 6:30:08 PM | ERROR | IoredisRedisConnectionStrategy | Failed connection to the redis database. | {
+  error: {
+    type: 'ReplyError',
+    message: 'WRONGPASS invalid username-password pair or user is disabled.',
+    stack: undefined,
+    cause: undefined
+  },
+  data: [
+    {
+      sessionMetadata: {
+        data: { data: {} },
+        userId: '1',
+        sessionId: '1',
+        correlationId: '67a9af6a-a586-481f-a0ea-1a69b32a24ce'
+      },
+      databaseId: '0a32eafa-d6e0-4e74-85c4-833862999112',
+      context: 'Common'
+    }
+  ]
+}
+10/4/2025, 6:30:08 PM | ERROR | DatabaseService | Connection test failed | {
+  error: {
+    type: 'RedisConnectionUnauthorizedException',
+    message: 'Failed to authenticate, please check the username or password.',
+    stack: undefined,
+    cause: {
+      type: 'ReplyError',
+      message: 'WRONGPASS invalid username-password pair or user is disabled.',
+      stack: undefined,
+      cause: undefined
+    }
+  },
+  sessionMetadata: {
+    data: { data: {} },
+    userId: '1',
+    sessionId: '1',
+    correlationId: '67a9af6a-a586-481f-a0ea-1a69b32a24ce'
+  },
+  data: undefined
+}
+10/4/2025, 6:30:08 PM | ERROR | IoredisRedisConnectionStrategy | Failed connection to the redis database. | {
+  error: {
+    type: 'ReplyError',
+    message: 'WRONGPASS invalid username-password pair or user is disabled.',
+    stack: undefined,
+    cause: undefined
+  },
+  data: [
+    {
+      sessionMetadata: {
+        data: { data: {} },
+        userId: '1',
+        sessionId: '1',
+        correlationId: '67a9af6a-a586-481f-a0ea-1a69b32a24ce'
+      },
+      databaseId: '0a32eafa-d6e0-4e74-85c4-833862999112',
+      context: 'Common'
+    }
+  ]
+}
+10/4/2025, 6:30:09 PM | ERROR | IoredisRedisConnectionStrategy | Failed connection to the redis database. | {
+  error: {
+    type: 'ReplyError',
+    message: 'WRONGPASS invalid username-password pair or user is disabled.',
+    stack: undefined,
+    cause: undefined
+  },
+  data: [
+    {
+      sessionMetadata: {
+        data: { data: {} },
+        userId: '1',
+        sessionId: '1',
+        correlationId: '67a9af6a-a586-481f-a0ea-1a69b32a24ce'
+      },
+      databaseId: '0a32eafa-d6e0-4e74-85c4-833862999112',
+      context: 'Common'
+    }
+  ]
+}
+10/4/2025, 6:30:25 PM | ERROR | PluginService | Error when trying to process plugin common | {
+  error: undefined,
+  data: [
+    [
+      {
+        target: { main: './index.js', name: 'common', visualizations: [] },
+        value: '[Circular]',
+        property: 'visualizations',
+        children: [],
+        constraints: { arrayNotEmpty: 'visualizations should not be empty' }
+      }
+    ]
+  ]
+}
+10/4/2025, 6:30:25 PM | ERROR | LocalDatabaseSettingsRepository | Database settings item with id:9b5247eb-76a0-4a6a-8c8b-db484fa04e58 was not Found | {
+  error: undefined,
+  sessionMetadata: {
+    data: { data: {} },
+    userId: '1',
+    sessionId: '1',
+    correlationId: 'e2b16c34-5b06-4428-97f0-1b6ddd3e93dd'
+  },
+  data: undefined
+}
+10/4/2025, 6:30:29 PM | ERROR | RedisearchService | Failed to get redisearch indexes | {
+  error: {
+    type: 'ReplyError',
+    message: "ERR unknown command 'FT._LIST', with args beginning with: ",
+    stack: undefined,
+    cause: undefined
+  },
+  clientMetadata: {
+    sessionMetadata: undefined,
+    databaseId: '9b5247eb-76a0-4a6a-8c8b-db484fa04e58',
+    uniqueId: undefined,
+    context: 'Browser',
+    db: undefined
+  },
+  sessionMetadata: {
+    data: { data: {} },
+    userId: '1',
+    sessionId: '1',
+    correlationId: '71c7c1f0-c2e4-48d7-af01-16ba5a484cdd'
+  },
+  data: undefined
+}
+10/4/2025, 6:34:49 PM | ERROR | KeytarEncryptionStrategy | Failed to initialize keytar module | {
+  error: {
+    type: 'Error',
+    message: 'Error loading shared library libsecret-1.so.0: No such file or directory (needed by /usr/src/app/redisinsight/api/node_modules/keytar/build/Release/keytar.node)',
+    stack: undefined,
+    cause: undefined
+  },
+  data: undefined
+}
+10/4/2025, 6:34:50 PM | ERROR | CommandsJsonProvider:redistimeseries | Unable to update redistimeseries commands | {
+  error: {
+    type: 'SyntaxError',
+    message: "Expected ',' or '}' after property value in JSON at position 29964",
+    stack: undefined,
+    cause: undefined
+  },
+  data: undefined
+}
+10/4/2025, 6:34:50 PM | ERROR | CommandsJsonProvider:redistimeseries | Unable to update redistimeseries commands | {
+  error: {
+    type: 'SyntaxError',
+    message: "Expected ',' or '}' after property value in JSON at position 29964",
+    stack: undefined,
+    cause: undefined
+  },
+  data: undefined
+}
+10/4/2025, 6:34:50 PM | ERROR | CommandsJsonProvider:redistimeseries | Unable to update redistimeseries commands | {
+  error: {
+    type: 'SyntaxError',
+    message: "Expected ',' or '}' after property value in JSON at position 29964",
+    stack: undefined,
+    cause: undefined
+  },
+  data: undefined
+}
+10/4/2025, 6:35:26 PM | ERROR | KeytarEncryptionStrategy | Failed to initialize keytar module | {
+  error: {
+    type: 'Error',
+    message: 'Error loading shared library libsecret-1.so.0: No such file or directory (needed by /usr/src/app/redisinsight/api/node_modules/keytar/build/Release/keytar.node)',
+    stack: undefined,
+    cause: undefined
+  },
+  data: undefined
+}
+10/4/2025, 6:35:27 PM | ERROR | CommandsJsonProvider:redistimeseries | Unable to update redistimeseries commands | {
+  error: {
+    type: 'SyntaxError',
+    message: "Expected ',' or '}' after property value in JSON at position 29964",
+    stack: undefined,
+    cause: undefined
+  },
+  data: undefined
+}
+10/4/2025, 6:35:27 PM | ERROR | CommandsJsonProvider:redistimeseries | Unable to update redistimeseries commands | {
+  error: {
+    type: 'SyntaxError',
+    message: "Expected ',' or '}' after property value in JSON at position 29964",
+    stack: undefined,
+    cause: undefined
+  },
+  data: undefined
+}
+10/4/2025, 6:35:27 PM | ERROR | CommandsJsonProvider:redistimeseries | Unable to update redistimeseries commands | {
+  error: {
+    type: 'SyntaxError',
+    message: "Expected ',' or '}' after property value in JSON at position 29964",
+    stack: undefined,
+    cause: undefined
+  },
+  data: undefined
+}
+10/4/2025, 6:36:11 PM | ERROR | KeytarEncryptionStrategy | Failed to initialize keytar module | {
+  error: {
+    type: 'Error',
+    message: 'Error loading shared library libsecret-1.so.0: No such file or directory (needed by /usr/src/app/redisinsight/api/node_modules/keytar/build/Release/keytar.node)',
+    stack: undefined,
+    cause: undefined
+  },
+  data: undefined
+}
+10/4/2025, 6:36:12 PM | ERROR | CommandsJsonProvider:redistimeseries | Unable to update redistimeseries commands | {
+  error: {
+    type: 'SyntaxError',
+    message: "Expected ',' or '}' after property value in JSON at position 29964",
+    stack: undefined,
+    cause: undefined
+  },
+  data: undefined
+}
+10/4/2025, 6:36:12 PM | ERROR | CommandsJsonProvider:redistimeseries | Unable to update redistimeseries commands | {
+  error: {
+    type: 'SyntaxError',
+    message: "Expected ',' or '}' after property value in JSON at position 29964",
+    stack: undefined,
+    cause: undefined
+  },
+  data: undefined
+}
+10/4/2025, 6:36:12 PM | ERROR | CommandsJsonProvider:redistimeseries | Unable to update redistimeseries commands | {
+  error: {
+    type: 'SyntaxError',
+    message: "Expected ',' or '}' after property value in JSON at position 29964",
+    stack: undefined,
+    cause: undefined
+  },
+  data: undefined
+}
+10/4/2025, 6:37:09 PM | ERROR | KeytarEncryptionStrategy | Failed to initialize keytar module | {
+  error: {
+    type: 'Error',
+    message: 'Error loading shared library libsecret-1.so.0: No such file or directory (needed by /usr/src/app/redisinsight/api/node_modules/keytar/build/Release/keytar.node)',
+    stack: undefined,
+    cause: undefined
+  },
+  data: undefined
+}
+10/4/2025, 6:37:10 PM | ERROR | CommandsJsonProvider:redistimeseries | Unable to update redistimeseries commands | {
+  error: {
+    type: 'SyntaxError',
+    message: "Expected ',' or '}' after property value in JSON at position 29964",
+    stack: undefined,
+    cause: undefined
+  },
+  data: undefined
+}
+10/4/2025, 6:37:10 PM | ERROR | CommandsJsonProvider:redistimeseries | Unable to update redistimeseries commands | {
+  error: {
+    type: 'SyntaxError',
+    message: "Expected ',' or '}' after property value in JSON at position 29964",
+    stack: undefined,
+    cause: undefined
+  },
+  data: undefined
+}
+10/4/2025, 6:37:10 PM | ERROR | CommandsJsonProvider:redistimeseries | Unable to update redistimeseries commands | {
+  error: {
+    type: 'SyntaxError',
+    message: "Expected ',' or '}' after property value in JSON at position 29964",
+    stack: undefined,
+    cause: undefined
+  },
+  data: undefined
+}
+10/4/2025, 6:37:41 PM | ERROR | KeytarEncryptionStrategy | Failed to initialize keytar module | {
+  error: {
+    type: 'Error',
+    message: 'Error loading shared library libsecret-1.so.0: No such file or directory (needed by /usr/src/app/redisinsight/api/node_modules/keytar/build/Release/keytar.node)',
+    stack: undefined,
+    cause: undefined
+  },
+  data: undefined
+}
+10/4/2025, 6:37:42 PM | ERROR | CommandsJsonProvider:redistimeseries | Unable to update redistimeseries commands | {
+  error: {
+    type: 'SyntaxError',
+    message: "Expected ',' or '}' after property value in JSON at position 29964",
+    stack: undefined,
+    cause: undefined
+  },
+  data: undefined
+}
+10/4/2025, 6:37:42 PM | ERROR | CommandsJsonProvider:redistimeseries | Unable to update redistimeseries commands | {
+  error: {
+    type: 'SyntaxError',
+    message: "Expected ',' or '}' after property value in JSON at position 29964",
+    stack: undefined,
+    cause: undefined
+  },
+  data: undefined
+}
+10/4/2025, 6:37:42 PM | ERROR | CommandsJsonProvider:redistimeseries | Unable to update redistimeseries commands | {
+  error: {
+    type: 'SyntaxError',
+    message: "Expected ',' or '}' after property value in JSON at position 29964",
+    stack: undefined,
+    cause: undefined
+  },
+  data: undefined
+}
+10/4/2025, 6:39:17 PM | ERROR | KeytarEncryptionStrategy | Failed to initialize keytar module | {
+  error: {
+    type: 'Error',
+    message: 'Error loading shared library libsecret-1.so.0: No such file or directory (needed by /usr/src/app/redisinsight/api/node_modules/keytar/build/Release/keytar.node)',
+    stack: undefined,
+    cause: undefined
+  },
+  data: undefined
+}
+10/4/2025, 6:39:18 PM | ERROR | CommandsJsonProvider:redistimeseries | Unable to update redistimeseries commands | {
+  error: {
+    type: 'SyntaxError',
+    message: "Expected ',' or '}' after property value in JSON at position 29964",
+    stack: undefined,
+    cause: undefined
+  },
+  data: undefined
+}
+10/4/2025, 6:39:18 PM | ERROR | CommandsJsonProvider:redistimeseries | Unable to update redistimeseries commands | {
+  error: {
+    type: 'SyntaxError',
+    message: "Expected ',' or '}' after property value in JSON at position 29964",
+    stack: undefined,
+    cause: undefined
+  },
+  data: undefined
+}
+10/4/2025, 6:39:18 PM | ERROR | CommandsJsonProvider:redistimeseries | Unable to update redistimeseries commands | {
+  error: {
+    type: 'SyntaxError',
+    message: "Expected ',' or '}' after property value in JSON at position 29964",
+    stack: undefined,
+    cause: undefined
+  },
+  data: undefined
+}
+10/4/2025, 6:43:46 PM | ERROR | KeytarEncryptionStrategy | Failed to initialize keytar module | {
+  error: {
+    type: 'Error',
+    message: 'Error loading shared library libsecret-1.so.0: No such file or directory (needed by /usr/src/app/redisinsight/api/node_modules/keytar/build/Release/keytar.node)',
+    stack: undefined,
+    cause: undefined
+  },
+  data: undefined
+}
+10/4/2025, 6:43:47 PM | ERROR | CommandsJsonProvider:redistimeseries | Unable to update redistimeseries commands | {
+  error: {
+    type: 'SyntaxError',
+    message: "Expected ',' or '}' after property value in JSON at position 29964",
+    stack: undefined,
+    cause: undefined
+  },
+  data: undefined
+}
+10/4/2025, 6:43:47 PM | ERROR | CommandsJsonProvider:redistimeseries | Unable to update redistimeseries commands | {
+  error: {
+    type: 'SyntaxError',
+    message: "Expected ',' or '}' after property value in JSON at position 29964",
+    stack: undefined,
+    cause: undefined
+  },
+  data: undefined
+}
+10/4/2025, 6:43:47 PM | ERROR | CommandsJsonProvider:redistimeseries | Unable to update redistimeseries commands | {
+  error: {
+    type: 'SyntaxError',
+    message: "Expected ',' or '}' after property value in JSON at position 29964",
+    stack: undefined,
+    cause: undefined
+  },
+  data: undefined
+}
+10/4/2025, 6:48:01 PM | ERROR | KeytarEncryptionStrategy | Failed to initialize keytar module | {
+  error: {
+    type: 'Error',
+    message: 'Error loading shared library libsecret-1.so.0: No such file or directory (needed by /usr/src/app/redisinsight/api/node_modules/keytar/build/Release/keytar.node)',
+    stack: undefined,
+    cause: undefined
+  },
+  data: undefined
+}
+10/4/2025, 6:48:02 PM | ERROR | CommandsJsonProvider:redistimeseries | Unable to update redistimeseries commands | {
+  error: {
+    type: 'SyntaxError',
+    message: "Expected ',' or '}' after property value in JSON at position 29964",
+    stack: undefined,
+    cause: undefined
+  },
+  data: undefined
+}
+10/4/2025, 6:48:02 PM | ERROR | CommandsJsonProvider:redistimeseries | Unable to update redistimeseries commands | {
+  error: {
+    type: 'SyntaxError',
+    message: "Expected ',' or '}' after property value in JSON at position 29964",
+    stack: undefined,
+    cause: undefined
+  },
+  data: undefined
+}
+10/4/2025, 6:48:02 PM | ERROR | CommandsJsonProvider:redistimeseries | Unable to update redistimeseries commands | {
+  error: {
+    type: 'SyntaxError',
+    message: "Expected ',' or '}' after property value in JSON at position 29964",
+    stack: undefined,
+    cause: undefined
+  },
+  data: undefined
+}
