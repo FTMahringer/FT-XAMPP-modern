@@ -6,59 +6,68 @@
 [![Vue.js](https://img.shields.io/badge/Vue-3-42b883?logo=vue.js)](https://vuejs.org/)
 [![MariaDB](https://img.shields.io/badge/MariaDB-Latest-003545?logo=mariadb)](https://mariadb.org/)
 [![Redis](https://img.shields.io/badge/Redis-Cache-red?logo=redis)](https://redis.io/)
+[![phpMyAdmin](https://img.shields.io/badge/phpMyAdmin-Available-orange?logo=phpmyadmin)](https://www.phpmyadmin.net/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
+[![Made with Love](https://img.shields.io/badge/Made%20with-Love-red)](https://github.com/FTMahringer)
 
-Ein modernes **XAMPP-ähnliches Development-Setup** mit **Docker Compose**, optimiert für **PHP / Symfony**, **Vue 3 / Vite**, **MariaDB**, **Redis** und mehr.  
-Alle Projekte liegen wie gewohnt im `htdocs`-Ordner – ganz wie bei XAMPP, nur in modern.  
+A modern **XAMPP-like development stack** powered by **Docker Compose**, optimized for **PHP / Symfony**, **Vue 3 / Vite**, **MariaDB**, **Redis**, and more.  
+All projects are placed in the `htdocs` folder – just like classic XAMPP, but modernized.  
 
 ---
 
 ## ✨ Features
-- 📂 **htdocs-Projekte** – jedes Projekt im `htdocs`-Ordner ist sofort erreichbar
-- ⚙️ **Symfony Backend** (API) + **Vue Frontend** (SPA) Support
-- 🐘 **PHP-FPM** mit eigener `php.ini`
-- 🌐 **NGINX** als Webserver + Reverse Proxy
-- 🛢 **MariaDB** als Datenbank
-- 🧩 **Redis** für Cache / Sessions
-- 📊 **phpMyAdmin** für DB-Verwaltung
-- 🖥 **Dashboard** (Vue + Symfony) – Übersicht über alle Projekte
-- 🐳 Komplett **Docker Compose** basiert
+- 📂 **htdocs projects** – every project inside `htdocs` is automatically accessible
+- ⚙️ Full support for **Symfony Backend (API)** + **Vue Frontend (SPA)**
+- 🐘 **PHP-FPM** with custom `php.ini`
+- 🌐 **NGINX** as webserver & reverse proxy
+- 🛢 **MariaDB** as database engine
+- 🧩 **Redis** for caching & sessions
+- 📊 **phpMyAdmin** for database management
+- 🖥 **Dashboard** (Vue + Symfony) – overview of all your projects
+- 🐳 100% **Docker Compose** based
 
 ---
 
 ## 📦 Installation
 
-1. **Repository klonen**
+1. **Clone the repository**
    ```bash
-   git clone https://github.com/<dein-user>/FT-XAMPP.git
+   git clone https://github.com/<your-user>/FT-XAMPP.git
    cd FT-XAMPP
    ```
 
-2. **.env Datei anpassen**  
-   Kopiere `.env.example` → `.env` und trage deine Variablen ein (Ports, Container-Namen, Passwörter).
+2. **Adjust your .env file**  
+   Copy `.env.example` → `.env` and set your variables (ports, container names, passwords).
 
-3. **Container starten**
+3. **Start the containers**
    ```bash
    docker compose up -d --build
    ```
 
-4. **Aufrufen im Browser**
+4. **Access in your browser**
    - Dashboard → [http://localhost/](http://localhost/)
    - phpMyAdmin → [http://localhost:8081/](http://localhost:8081/)
+   - redisinsight → [http://localhost:5540/](http://localhost:5540/)
 
 ---
 
-## 📂 Projektstruktur
+## 📂 Project Structure
 
 ```bash
 FT-XAMPP/
-├── docker/              # Dockerfiles + Configs
+├── docker/              # Dockerfiles + configs
 │   ├── nginx/           # nginx.conf
 │   ├── php/             # php.ini, Dockerfile
 │   └── ...
-├── htdocs/              # deine Projekte (wie XAMPP)
-│   ├── _dashboard/      # internes Dashboard (Vue + Symfony)
-│   ├── project1/        # Symfony-Projekt
-│   ├── project2/        # Vue-Frontend
+├── data/                # Database + redis + phpmyadmin files
+│   ├── mariadb_data/    # mariiadb database files
+│   ├── phpmyadmin/      # phpmyadmin config files (change in docker-compose)
+|   ├── redis_data/      # redis - storage
+│   └── ...
+├── htdocs/              # your projects (like XAMPP)
+│   ├── _dashboard/      # internal dashboard (Vue + Symfony)
+│   ├── project1/        # Symfony project
+│   ├── project2/        # Vue frontend
 │   └── ...
 ├── docker-compose.yml
 ├── .env.example
@@ -67,36 +76,36 @@ FT-XAMPP/
 
 ---
 
-## ⚡ Beispiel-Setup
+## ⚡ Example Setup
 
-- Lege ein neues Projekt in `htdocs` an:
+- Add a new project in `htdocs`:
   ```bash
   htdocs/
   ├── my-symfony-api/
   └── my-vue-app/
   ```
 
-- Symfony erreichbar unter:
+- Symfony accessible at:
   ```
   http://localhost/my-symfony-api/public/
   ```
 
-- Vue erreichbar unter:
+- Vue accessible at:
   ```
   http://localhost/my-vue-app/
   ```
 
 ---
 
-## 🔧 Development Tipps
+## 🔧 Development Tips
 
-- **Symfony Console** in Container starten:
+- **Symfony Console** inside container:
   ```bash
   docker exec -it ftxampp_phpfpm bash
   php bin/console
   ```
 
-- **Node / NPM** für Vue Projekte:
+- **Node / NPM** for Vue projects:
   ```bash
   docker exec -it ftxampp_node bash
   npm install
@@ -105,13 +114,13 @@ FT-XAMPP/
 
 ---
 
-## 📝 Lizenz
+## 📝 License
 
-Dieses Projekt ist unter der **MIT-Lizenz** veröffentlicht – frei zur Nutzung & Anpassung.
+This project is released under the **MIT License** – free to use and adapt.
 
 ---
 
 ## ❤️ Credits
 
-FT-XAMPP ist ein Hobby-Projekt von [Fynn](https://github.com/FTMahringer),  
-inspiriert von XAMPP, aber modernisiert für Docker & Fullstack Development.
+FT-XAMPP is a hobby project by [Fynn](https://github.com/FTMahringer),  
+inspired by XAMPP, but modernized for Docker & fullstack development.
