@@ -1,8 +1,8 @@
-# alles im htdocs ignorieren
 htdocs/*
-
-# Ausnahme für den Ordner selbst
 !htdocs/_dashboard/
-
-# Ausnahme für den Inhalt
 !htdocs/_dashboard/**
+
+
+data/*
+!data/phpmyadmin
+!data/phpmyadmin/**
