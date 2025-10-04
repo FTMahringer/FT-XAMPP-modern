@@ -30,7 +30,7 @@ All projects are placed in the `htdocs` folder – just like classic XAMPP, but 
 
 ## ✨  Description
 
-Project has an [olf version](https://github.com/FTMahringer/FT-XAMPP) of it, but decided to remake it and use a more modern aproach.
+Project has an [old version](https://github.com/FTMahringer/FT-XAMPP) of it, but decided to remake it and use a more modern aproach.
 
 The idea was still the same, create a xampp-like environment in docker with more freedom.
 
