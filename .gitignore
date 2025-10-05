@@ -1,8 +1,5 @@
-htdocs/*
-!htdocs/_dashboard/
-!htdocs/_dashboard/**
+/data/
+!/data/phpmyadmin/
 
-
-data/*
-!data/phpmyadmin
-!data/phpmyadmin/**
+/htdocs/
+!/htdocs/_dashboard/
