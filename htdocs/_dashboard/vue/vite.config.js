@@ -7,7 +7,7 @@ export default defineConfig({
   root: '.',
   base: '/_dashboard/',
   build: {
-    outDir: 'dist',
+    outDir:  process.env.OUT_DIR || 'dist',
     emptyOutDir: true
   },
   resolve: {

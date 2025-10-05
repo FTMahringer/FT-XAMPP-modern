@@ -1,14 +1,44 @@
-<script setup>
-import ProjectItem from './ProjectItem.vue'
-defineProps({ items: { type:Array, required: true } })
+<script setup lang="ts">
+import { ref, onMounted } from 'vue'
+import ProjectEntry from '@/components/ProjectEntry.vue'
+import { useApi } from '@/composables/useApi'
+import QuickCreateModal from '@/components/QuickCreateModal.vue'
+
+const api = useApi()
+const projects = ref<any[]>([])
+const variant = ref<'card'|'list'>('list')
+const qcOpen = ref(false)
+
+async function load() {
+  const res = await api.get('/_dashboard/api/projects.php')
+  projects.value = res?.data?.projects ?? []
+}
+function openProject(name:string){ window.open(`/${name}/`, '_blank') }
+async function refreshGit(name:string){ await api.get('/_dashboard/api/git_status.php', { project: name, quick: 1 }); await load() }
+
+
+function onCreated(){ qcOpen.value = false; load() }
+
+onMounted(load)
 </script>
 
 <template>
-  <div class="list">
-    <ProjectItem v-for="p in items" :key="p.name" :p="p" />
+  <div class="bar">
+    <button @click="variant = variant==='list' ? 'card' : 'list'">Switch: {{ variant }}</button>
+    <button @click="load">Reload</button>
+    <button @click="qcOpen = true">+ New</button>
   </div>
-</template>
 
-<style>
-.list{ display:flex; flex-direction:column; gap:14px; padding:6px; max-height:70vh; overflow:auto; }
-</style>
+  <div class="grid" :class="variant">
+    <ProjectEntry
+        v-for="p in projects"
+        :key="p.name"
+        :project="p"
+        :variant="variant"
+        @open="openProject"
+        @refresh="refreshGit"
+    />
+  </div>
+
+  <QuickCreateModal :open="qcOpen" @close="qcOpen=false" @created="onCreated" />
+</template>

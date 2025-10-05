@@ -1,0 +1,4 @@
+[
+  { "name": "phpMyAdmin",   "url": "http://localhost:8080", "tags": ["MariaDB"] },
+  { "name": "Redis Insight","url": "http://localhost:5540", "tags": ["Redis"] }
+]

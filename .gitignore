@@ -1,5 +1,8 @@
 /data/
 !/data/phpmyadmin/
 
-/htdocs/
+/htdocs/*
+/htdocs/_dashboard/dist/assets/*
+/htdocs/_dashboard/dist/*
 !/htdocs/_dashboard/
+!/htdocs/_dashboard/**

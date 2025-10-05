@@ -12,7 +12,8 @@ RUN docker-php-ext-configure gd --with-jpeg
 RUN docker-php-ext-install -j$(nproc) intl zip opcache bcmath pdo_mysql gd
 
 # Redis extension
-RUN pecl install redis \    && docker-php-ext-enable redis
+RUN pecl install redis \
+ && docker-php-ext-enable redis
 
 # Xdebug (build optional; enable via php.ini if needed)
 RUN pecl install xdebug \    && docker-php-ext-enable xdebug || true
