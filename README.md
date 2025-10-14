@@ -8,7 +8,6 @@
 [![Redis](https://img.shields.io/badge/Redis-Cache-red?logo=redis)](https://redis.io/)
 [![phpMyAdmin](https://img.shields.io/badge/phpMyAdmin-Available-orange?logo=phpmyadmin)](https://www.phpmyadmin.net/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
-[![Made with Love](https://img.shields.io/badge/Made%20with-Love-red)](https://github.com/FTMahringer)
 
 A modern **XAMPP-like development stack** powered by **Docker Compose**, optimized for **PHP / Symfony**, **Vue 3 / Vite**, **MariaDB**, **Redis**, and more.  
 All projects are placed in the `htdocs` folder – just like classic XAMPP, but modernized.  
@@ -19,7 +18,6 @@ All projects are placed in the `htdocs` folder – just like classic XAMPP, but 
 - 📂 **htdocs projects** – every project inside `htdocs` is automatically accessible
 - ⚙️ Full support for **Symfony Backend (API)** + **Vue Frontend (SPA)**
 - 🐘 **PHP-FPM** with custom `php.ini`
-- 🌐 **NGINX** as webserver & reverse proxy
 - 🛢 **MariaDB** as database engine
 - 🧩 **Redis** for caching & sessions
 - 📊 **phpMyAdmin** for database management
@@ -30,11 +28,10 @@ All projects are placed in the `htdocs` folder – just like classic XAMPP, but 
 
 ## ✨  Description
 
-Project has an [old version](https://github.com/FTMahringer/FT-XAMPP) of it, but decided to remake it and use a more modern aproach.
 
-The idea was still the same, create a xampp-like environment in docker with more freedom.
+The idea was to create a xampp-like environment in docker with more freedom.
 
-The aproach for the modern version was to be able to create PHP projects and also node projects (vue, ...)
+The approach for this was to be able to easily host PHP projects and also node projects (vue, ...)
 
 ---
 
@@ -42,7 +39,7 @@ The aproach for the modern version was to be able to create PHP projects and als
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/<your-user>/FT-XAMPP.git
+   git clone https://github.com/FTMahringer/FT-XAMPP-modern.git
    cd FT-XAMPP
    ```
 
@@ -66,7 +63,6 @@ The aproach for the modern version was to be able to create PHP projects and als
 ```bash
 FT-XAMPP/
 ├── docker/              # Dockerfiles + configs
-│   ├── nginx/           # nginx.conf
 │   ├── php/             # php.ini, Dockerfile
 │   └── ...
 ├── data/                # Database + redis + phpmyadmin files
@@ -111,7 +107,7 @@ FT-XAMPP/
 
 - **Symfony Console** inside container:
   ```bash
-  docker exec -it ftxampp_phpfpm bash
+  docker exec -it ftxampp_apache bash
   php bin/console
   ```
 

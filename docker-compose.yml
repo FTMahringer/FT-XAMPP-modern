@@ -21,7 +21,7 @@ services:
       - redis
     restart: unless-stopped
     networks: [lamp-network]
-    
+
   mariadb:
     image: mariadb:${MARIADB_VERSION}
     container_name: ${MARIADB_CONTAINER}
@@ -38,7 +38,8 @@ services:
   phpmyadmin:
     image: phpmyadmin:${PHPMYADMIN_VERSION}
     container_name: ${PHPMYADMIN_CONTAINER}
-    depends_on: [mariadb]
+    depends_on:
+      - mariadb
     ports:
       - "${PHPMYADMIN_PORT}:80"
     environment:
@@ -46,17 +47,16 @@ services:
       PMA_PORT: 3306
       MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
     volumes:
-      # Mount für Themes & Anpassungen
       - ./data/phpmyadmin/themes:/var/www/html/themes
     restart: unless-stopped
     networks: [lamp-network]
 
   redis:
     image: redis:${REDIS_VERSION}
-    command: ["redis-server", "--save", "60", "1000", "--appendonly", "yes", "--requirepass", "${REDIS_PASSWORD}"]
     container_name: ${REDIS_CONTAINER}
-    environment:
-      URL: ${URL}
+    command: >
+      redis-server --save 60 1000 --appendonly yes
+      --requirepass ${REDIS_PASSWORD}
     ports:
       - "${REDIS_PORT}:6379"
     volumes:
@@ -67,9 +67,23 @@ services:
   redis-insight:
     image: redis/redisinsight:${REDIS_INSIGHT_VERSION}
     container_name: ${REDIS_INSIGHT_CONTAINER}
-    depends_on: [redis]
+    depends_on:
+      - redis
     ports:
       - "${REDIS_INSIGHT_PORT}:5540"
+    environment:
+      # Auto-connect configuration
+      RI_ACCEPT_TERMS_AND_CONDITIONS: ${RI_ACCEPT_TERMS_AND_CONDITIONS}
+      RI_APP_HOST: ${RI_APP_HOST}
+      RI_APP_PORT: ${RI_APP_PORT}
+      RI_ENCRYPTION_KEY: ${RI_ENCRYPTION_KEY}
+      RI_REDIS_ALIAS: ${RI_REDIS_ALIAS}
+      RI_REDIS_HOST: ${RI_REDIS_HOST}
+      RI_REDIS_PORT: ${RI_REDIS_PORT}
+      RI_REDIS_USERNAME: ${RI_REDIS_USERNAME}
+      RI_REDIS_PASSWORD: ${RI_REDIS_PASSWORD}
+      RI_REDIS_DB: ${RI_REDIS_DB}
+      RI_REDIS_TLS: ${RI_REDIS_TLS}
     volumes:
       - ./data/redis_insight_data:/data
     restart: unless-stopped
@@ -80,19 +94,20 @@ services:
     container_name: ${DASHBOARD_BUILD_CONTAINER}
     working_dir: /app
     environment:
-      - OUT_DIR=/app_dist
-      - CHOKIDAR_USEPOLLING=1
-      - npm_config_loglevel=warn
+      OUT_DIR: /app_dist
+      CHOKIDAR_USEPOLLING: 1
+      npm_config_loglevel: warn
+      NODE_ENV: ${NODE_ENV}
     volumes:
       - ./htdocs/_dashboard/vue:/app
       - ./htdocs/_dashboard/dist:/app_dist
     command: >
-        sh -c "
-          if [ ! -d node_modules ]; then
-            npm install --no-audit --no-fund
-          fi &&
-          npm run watch
-        "
+      sh -c "
+        if [ ! -d node_modules ]; then
+          npm install --no-audit --no-fund;
+        fi &&
+        npm run watch
+      "
     restart: unless-stopped
     networks: [lamp-network]
 
