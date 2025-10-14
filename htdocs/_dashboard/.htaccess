@@ -1,0 +1,19 @@
+DirectoryIndex dist/index.html
+
+RewriteEngine On
+# Assets direkt aus dist
+RewriteRule ^assets/(.*)$ dist/assets/$1 [L]
+
+# SPA-Fallback
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^ dist/index.html [L]
+
+# Dev: Caching aus
+<IfModule mod_headers.c>
+  <FilesMatch "\.(js|css|html|map)$">
+    Header set Cache-Control "no-store, no-cache, must-revalidate, max-age=0"
+    Header set Pragma "no-cache"
+    Header set Expires "0"
+  </FilesMatch>
+</IfModule>

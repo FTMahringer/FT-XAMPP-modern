@@ -1,0 +1,101 @@
+services:
+  web:
+    build:
+      context: ./docker/php
+      dockerfile: Dockerfile
+    container_name: ${APACHE_CONTAINER}
+    environment:
+      PHP_IDE_CONFIG: ${PHP_IDE_CONFIG}
+      REDIS_HOST: ${REDIS_CONTAINER}
+      REDIS_PORT: ${REDIS_PORT:-6379}
+      REDIS_PASSWORD: ${REDIS_PASSWORD}
+      URL: ${URL}
+      TZ: Europe/Vienna
+    ports:
+      - "${APACHE_HTTP_PORT}:80"
+    volumes:
+      - ./htdocs:/var/www/html
+      - ./docker/php/php.ini:/usr/local/etc/php/php.ini
+    depends_on:
+      - mariadb
+      - redis
+    restart: unless-stopped
+    networks: [lamp-network]
+    
+  mariadb:
+    image: mariadb:${MARIADB_VERSION}
+    container_name: ${MARIADB_CONTAINER}
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+      MYSQL_DATABASE: ${MYSQL_DATABASE}
+      MYSQL_USER: ${MYSQL_USER}
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+    volumes:
+      - ./data/mariadb_data:/var/lib/mysql
+    restart: unless-stopped
+    networks: [lamp-network]
+
+  phpmyadmin:
+    image: phpmyadmin:${PHPMYADMIN_VERSION}
+    container_name: ${PHPMYADMIN_CONTAINER}
+    depends_on: [mariadb]
+    ports:
+      - "${PHPMYADMIN_PORT}:80"
+    environment:
+      PMA_HOST: mariadb
+      PMA_PORT: 3306
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+    volumes:
+      # Mount für Themes & Anpassungen
+      - ./data/phpmyadmin/themes:/var/www/html/themes
+    restart: unless-stopped
+    networks: [lamp-network]
+
+  redis:
+    image: redis:${REDIS_VERSION}
+    command: ["redis-server", "--save", "60", "1000", "--appendonly", "yes", "--requirepass", "${REDIS_PASSWORD}"]
+    container_name: ${REDIS_CONTAINER}
+    environment:
+      URL: ${URL}
+    ports:
+      - "${REDIS_PORT}:6379"
+    volumes:
+      - ./data/redis_data:/data
+    restart: unless-stopped
+    networks: [lamp-network]
+
+  redis-insight:
+    image: redis/redisinsight:${REDIS_INSIGHT_VERSION}
+    container_name: ${REDIS_INSIGHT_CONTAINER}
+    depends_on: [redis]
+    ports:
+      - "${REDIS_INSIGHT_PORT}:5540"
+    volumes:
+      - ./data/redis_insight_data:/data
+    restart: unless-stopped
+    networks: [lamp-network]
+
+  dashboard-build:
+    image: node:${NODE_VERSION}
+    container_name: ${DASHBOARD_BUILD_CONTAINER}
+    working_dir: /app
+    environment:
+      - OUT_DIR=/app_dist
+      - CHOKIDAR_USEPOLLING=1
+      - npm_config_loglevel=warn
+    volumes:
+      - ./htdocs/_dashboard/vue:/app
+      - ./htdocs/_dashboard/dist:/app_dist
+    command: >
+        sh -c "
+          if [ ! -d node_modules ]; then
+            npm install --no-audit --no-fund
+          fi &&
+          npm run watch
+        "
+    restart: unless-stopped
+    networks: [lamp-network]
+
+networks:
+  lamp-network:
+    driver: bridge
