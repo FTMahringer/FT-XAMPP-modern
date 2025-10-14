@@ -1,3 +1,4 @@
+.idea/*
 /data/
 !/data/phpmyadmin/
 
@@ -8,5 +9,5 @@
 !/htdocs/simple-site/**
 
 
-.idea/*
+
 .env
