@@ -4,6 +4,8 @@
 /htdocs/*
 !/htdocs/_dashboard/
 !/htdocs/_dashboard/**
+!/htdocs/simple-site/
+!/htdocs/simple-site/**
 
 
 .idea/*
