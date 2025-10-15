@@ -21,7 +21,7 @@ All projects are placed in the `htdocs` folder – just like classic XAMPP, but 
 - 🛢 **MariaDB** as database engine
 - 🧩 **Redis** for caching & sessions
 - 📊 **phpMyAdmin** for database management
-- 🖥 **Dashboard** (Vue + Symfony) – overview of all your projects
+- 🖥 **Dashboard** (Vue + custom API) – overview of all your projects
 - 🐳 100% **Docker Compose** based
 
 ---
