@@ -91,7 +91,14 @@ async function refreshGit() {
 }
 
 function openProject() {
-  emit('open', props.project.name)
+  if (props.project.type === 'Symfony/Laravel (public)') {
+    // strip props.project.entry from index.php
+    const entry = props.project.entry?.replace(/\/index\.php$/, '')
+    emit('open', props.project.name + entry)
+  } else {
+    emit('open', props.project.name)
+  }
+
 }
 </script>
 

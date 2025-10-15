@@ -20,11 +20,15 @@ RUN apt-get update \
  && rm -rf /var/lib/apt/lists/*
 
 # Composer (from official image)
-COPY --from=composer:latest /usr/bin/composer /usr/local/bin/composer
+RUN php -r "copy('https://getcomposer.org/installer','composer-setup.php');" \
+ && php composer-setup.php --install-dir=/usr/local/bin --filename=composer \
+ && rm composer-setup.php \
+ && composer --version
 
 # Optional: set Composer defaults (no memory limit, longer timeout)
 ENV COMPOSER_MEMORY_LIMIT=-1 \
-    COMPOSER_PROCESS_TIMEOUT=2000
+    COMPOSER_PROCESS_TIMEOUT=2000 \
+    COMPOSER_ALLOW_SUPERUSER=1
 
 WORKDIR /var/www/html
 

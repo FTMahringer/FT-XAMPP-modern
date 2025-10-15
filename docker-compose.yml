@@ -98,18 +98,26 @@ services:
       CHOKIDAR_USEPOLLING: 1
       npm_config_loglevel: warn
       NODE_ENV: ${NODE_ENV}
+      BUILD_ROOT: /var/www/html
+      PATH: "/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+    ports:
+      - "3050:3050" # optional extern; intern reicht auch
     volumes:
       - ./htdocs/_dashboard/vue:/app
       - ./htdocs/_dashboard/dist:/app_dist
+      - ./htdocs:/var/www/html
     command: >
       sh -c "
         if [ ! -d node_modules ]; then
           npm install --no-audit --no-fund;
-        fi &&
+        fi;
+        node /app/server.js &
         npm run watch
       "
     restart: unless-stopped
-    networks: [lamp-network]
+    networks: [ lamp-network ]
+
+
 
 networks:
   lamp-network:

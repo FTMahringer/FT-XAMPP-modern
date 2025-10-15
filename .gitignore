@@ -7,7 +7,5 @@
 !/htdocs/_dashboard/**
 !/htdocs/simple-site/
 !/htdocs/simple-site/**
-
-
-
-.env
+/.env
+/htdocs/simple-site/.ftx_meta.json
