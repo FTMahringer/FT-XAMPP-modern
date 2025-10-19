@@ -119,11 +119,11 @@ htdocs/_dashboard/config/htaccess-files/
 ### 📄 Available Templates
 | File | Used For | Description |
 |------|-----------|-------------|
-| [.htaccess](https://github.com/FTMahringer/FT-XAMPP-modern/tree/main/htdocs/_dashboard/config/htaccess-files/.htaccess) | **Plain PHP** projects | Basic rewrite & security config for single-file PHP sites |
-| [html.htaccess](https://github.com/FTMahringer/FT-XAMPP-modern/tree/main/htdocs/_dashboard/config/htaccess-files/html.htaccess) | **Plain HTML** projects | Adds caching, compression, and basic protection |
-| [vue.htaccess](https://github.com/FTMahringer/FT-XAMPP-modern/tree/main/htdocs/_dashboard/config/htaccess-files/vue.htaccess) | **Vue / SPA** projects | Supports client-side routing → all requests redirect to `index.html` |
-| [symfony.htaccess](https://github.com/FTMahringer/FT-XAMPP-modern/tree/main/htdocs/_dashboard/config/htaccess-files/symfony.htaccess) | **Symfony (public/)** | Standard Symfony rewrite configuration for `public/` folder |
-| [symfony-root.htaccess](https://github.com/FTMahringer/FT-XAMPP-modern/tree/main/htdocs/_dashboard/config/htaccess-files/symfony-root.htaccess) | **Symfony (root)** | Root-level version that forwards requests to `/public/index.php` |
+| [.htaccess](https://github.com/FTMahringer/FT-XAMPP-modern/tree/master/htdocs/_dashboard/config/htaccess-files/.htaccess) | **Plain PHP** projects | Basic rewrite & security config for single-file PHP sites |
+| [html.htaccess](https://github.com/FTMahringer/FT-XAMPP-modern/tree/master/htdocs/_dashboard/config/htaccess-files/html.htaccess) | **Plain HTML** projects | Adds caching, compression, and basic protection |
+| [vue.htaccess](https://github.com/FTMahringer/FT-XAMPP-modern/tree/master/htdocs/_dashboard/config/htaccess-files/vue.htaccess) | **Vue / SPA** projects | Supports client-side routing → all requests redirect to `index.html` |
+| [symfony.htaccess](https://github.com/FTMahringer/FT-XAMPP-modern/tree/master/htdocs/_dashboard/config/htaccess-files/symfony.htaccess) | **Symfony (public/)** | Standard Symfony rewrite configuration for `public/` folder |
+| [symfony-root.htaccess](https://github.com/FTMahringer/FT-XAMPP-modern/tree/master/htdocs/_dashboard/config/htaccess-files/symfony-root.htaccess) | **Symfony (root)** | Root-level version that forwards requests to `/public/index.php` |
 
 ### ⚙️ Automatic Usage
 When you create a project via the Dashboard (`/api/projects_create.php`):
