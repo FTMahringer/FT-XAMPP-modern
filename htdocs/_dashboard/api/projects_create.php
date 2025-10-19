@@ -108,7 +108,7 @@ switch ($type) {
     case 'plain-html':
         mkdirp($target);
         put($target.'/index.html', "<!doctype html><meta charset=utf-8><title>$name</title><h1>$name</h1><p>Hello!</p>");
-        copyFromTemplate($htFilesDir.'/html.htaccess', $target.'/.htaccess');
+        copyFromTemplate($htFilesDir.'/html.htaccess', $target.'/public/.htaccess');
         break;
 
     case 'symfony':
@@ -146,7 +146,7 @@ switch ($type) {
         @chmod($target.'/var/log', 0775);
 
         // Immer unsere Variante nach public/.htaccess legen (überschreibt ggf. die vom apache-pack)
-        copyFromTemplate($htFilesDir.'/symfony.htaccess', $target.'/public/.htaccess');
+        copyFromTemplate($htFilesDir.'/symfony.htaccess', $target.'/.htaccess');
         break;
 
     case 'vue':
