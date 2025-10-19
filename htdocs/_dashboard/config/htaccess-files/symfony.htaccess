@@ -1,0 +1,93 @@
+# =========================================================
+# Symfony Optimized .htaccess
+# =========================================================
+# Works for Symfony 5–7 in Apache environments
+# =========================================================
+
+IfModule mod_rewrite.c
+  RewriteEngine On
+
+  # ---------------------------------------------------------
+  # 1️⃣ Protect sensitive files (.env, .git, config, etc.)
+  # ---------------------------------------------------------
+  RewriteRule ^.env - [F,L]
+  RewriteRule ^.git - [F,L]
+  RewriteRule ^vendor - [F,L]
+  RewriteRule ^var(cacheloglogs) - [F,L]
+  RewriteRule ^.htaccess - [F,L]
+
+  # ---------------------------------------------------------
+  # 2️⃣ Redirect all requests to index.php (front controller)
+  # ---------------------------------------------------------
+  # Skip existing files & folders
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+
+  # Handle pretty URLs (no .php extension)
+  RewriteRule ^ index.php [QSA,L]
+
+  # Optional Force HTTPS (enable if needed)
+  #RewriteCond %{HTTPS} !=on
+  #RewriteRule ^ https%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+IfModule
+
+
+# ---------------------------------------------------------
+# 3️⃣ Options & Defaults
+# ---------------------------------------------------------
+Options -Indexes -MultiViews +FollowSymLinks
+DirectoryIndex index.php
+AddDefaultCharset UTF-8
+
+
+# ---------------------------------------------------------
+# 4️⃣ Security headers (safe, modern defaults)
+# ---------------------------------------------------------
+IfModule mod_headers.c
+  Header always set X-Frame-Options SAMEORIGIN
+  Header always set X-Content-Type-Options nosniff
+  Header always set Referrer-Policy strict-origin-when-cross-origin
+  Header always set X-XSS-Protection 1; mode=block
+  # Optional CSP example (can break inline scripts if strict)
+  #Header set Content-Security-Policy default-src 'self'; img-src  data https; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline';
+IfModule
+
+
+# ---------------------------------------------------------
+# 5️⃣ Cache static assets aggressively
+# ---------------------------------------------------------
+IfModule mod_expires.c
+  ExpiresActive On
+  # Symfony’s built assets (hashed filenames, safe to cache long)
+  ExpiresByType imagejpg access plus 1 year
+  ExpiresByType imagejpeg access plus 1 year
+  ExpiresByType imagepng access plus 1 year
+  ExpiresByType imagewebp access plus 1 year
+  ExpiresByType imagegif access plus 1 year
+  ExpiresByType textcss access plus 1 month
+  ExpiresByType applicationjavascript access plus 1 month
+  ExpiresByType applicationx-javascript access plus 1 month
+  ExpiresDefault access plus 3 days
+IfModule
+
+
+# ---------------------------------------------------------
+# 6️⃣ Prevent PHP in publicuploads or other unsafe folders
+# ---------------------------------------------------------
+Directory uploads
+  FilesMatch .php$
+    Require all denied
+  FilesMatch
+Directory
+
+Directory var
+  Require all denied
+Directory
+
+
+# ---------------------------------------------------------
+# 7️⃣ Gzip compression (if mod_deflate is available)
+# ---------------------------------------------------------
+IfModule mod_deflate.c
+  AddOutputFilterByType DEFLATE texthtml textplain textxml textcss applicationjavascript applicationjson
+IfModule

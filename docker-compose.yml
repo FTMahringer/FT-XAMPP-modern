@@ -15,6 +15,7 @@ services:
       - "${APACHE_HTTP_PORT}:80"
     volumes:
       - ./htdocs:/var/www/html
+      - ./docker/apache/apache2.conf:/etc/apache2/apache2.conf:ro
       - ./docker/php/php.ini:/usr/local/etc/php/php.ini
     depends_on:
       - mariadb
