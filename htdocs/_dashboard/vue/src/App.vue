@@ -19,6 +19,8 @@ onMounted(() => {
         <span>My Local Dev Dashboard</span>
       </div>
       <nav class="nav">
+        <!-- link to my github  -->
+        <a href="https://github.com/FTMahringer/FT-XAMPP-modern" target="_blank" rel="noopener" class="nav-link">Github</a>
         <RouterLink to="/_dashboard/" class="nav-link">Dashboard</RouterLink>
         <RouterLink to="/api/" class="nav-link">API Explorer</RouterLink>
         <button class="theme-btn" @click="toggleTheme" :title="dark ? 'Switch to light' : 'Switch to dark'">🌙</button>
